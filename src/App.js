@@ -103,8 +103,7 @@ function ChatRoom() {
   </>)
 }
 function ChatMessage(props) {
-  const { text, uid, photoURL} = props.message;
-  const {displayName } = auth.currentUser;
+  const { text, uid, photoURL, displayName} = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
